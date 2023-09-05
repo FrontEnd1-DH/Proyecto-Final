@@ -19,7 +19,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 40px;
 }
 
 nav ul{
@@ -36,7 +36,7 @@ nav ul{
     color:#242E5299;
     cursor: pointer;
 }
-.boton{
+.boton-principal{
     background-color: #8B48BF;
     color:white;
     border-radius: 50px;
@@ -63,7 +63,12 @@ nav ul{
     font-size: 40px;
     color:#232C50;
 }
-
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 15px;
+}
 
 /*Parte 2 -Eliana*/
 .marco-diferencia{ 
@@ -147,6 +152,7 @@ li.item1 h4, li.item2 h4, li.item3 h4{
 }
 
 /*Parte 3 -Giuliana */
+
 .titulo-best{
     text-align: center;
     margin-top: 30px;
@@ -192,6 +198,13 @@ li.item1 h4, li.item2 h4, li.item3 h4{
 .boton-inferior{
     text-align: center;
     margin:40px;
+}
+.boton{
+    background-color: #8B48BF;
+    color:white;
+    border-radius: 50px;
+    padding: 10px 30px;
+    border: 2px solid #8B48BF;
 }
 .boton:hover{
     background-color:#8B48BFB2 ;
@@ -349,8 +362,32 @@ section.buscador button{
     {
         width: auto;
     }
-    /*Parte 1 -Giuliana */
-
+     /*Parte 1 -Giuliana */
+    
+     .menu-icon {
+        display: block;
+    }
+    .menu,.boton-principal{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+    .principal {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-end;
+        margin-top: 50px;
+       
+    }
+    .imagen-principal img {
+        width: 100%; 
+        max-width: 100%; 
+        height: auto; 
+    }
 
     /*Parte 2 -Eliana*/
     .marco-diferencia{
@@ -415,7 +452,9 @@ section.buscador button{
 
     /*Parte 3- Giuliana*/
 
-
+    .card.one, .card.three {
+        display: none;
+      }
     /*Parte 4 - Eliana*/
     .marco-equipo{
         background-color: #3CDDF3;

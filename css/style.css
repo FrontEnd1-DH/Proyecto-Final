@@ -396,6 +396,7 @@ section.buscador button{
         align-items: flex-start;
         padding-left: 20px;
         line-height: 24.18px;
+        margin: 0;
                  
         background-color: #3CDDF3; 
     }  
@@ -488,22 +489,19 @@ section.buscador button{
     }
 
     .caja2{
-        width: 70%;
+        width: 68%;
     }
    
     .caja3{
         justify-content: center;
         margin: 0;
-        order: -1;  
+        order: -1; 
+        width: 80%; 
     }
 
     .redes-sociales{
         order: -1;
         width: 100%;
-    }
-
-    .buscador{
-        width: 80%;
     }
 
     section.buscador input{

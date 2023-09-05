@@ -205,7 +205,6 @@ li.item1 h4, li.item2 h4, li.item3 h4{
     align-items: center;
     justify-content: space-around;
     height: 224px;
-    /*width: 100vw;*/
 
     background-color: #8B48BF;
 }
@@ -236,7 +235,8 @@ li.item1 h4, li.item2 h4, li.item3 h4{
     display: flex;
     justify-content: space-around;
     height: 247px;
-    /*width: 100vw;*/
+    width: 100%;
+    padding: 40px;
 
     background-color: #1E1E26;
     color: #ffffff;
@@ -244,14 +244,12 @@ li.item1 h4, li.item2 h4, li.item3 h4{
 
 .caja{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;  
+    justify-content: space-between;
 }
 
-.caja1-footer{
-    width: 11%;
-    justify-content: space-around;
+.caja1{
+     flex-direction: column;
+     align-items: flex-start;
 }
 
 .redes-sociales{
@@ -264,24 +262,6 @@ li.item1 h4, li.item2 h4, li.item3 h4{
     justify-content: space-around;
 }
 
-.caja2-footer{
-    width: 5%;
-}
-
-.caja3-footer{
-    width: 8%;
-}
-
-div.caja2-footer nav > ul, div.caja3-footer nav > ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 128px;
-    width: 100%;
-
-    list-style: none;
-}
-
 .enlaces{
     color: #ffffff;
     font-size: 1rem;
@@ -291,9 +271,29 @@ div.caja2-footer nav > ul, div.caja3-footer nav > ul {
     text-transform: capitalize;
 }
 
-.caja4-footer{
-    width: 18.9%;
+.caja2{
+    width: 393px;
+    justify-content: space-between;
+}
+
+.nosotros, .comunidad{
+    height: 142px;
+    width: 110px;
+    flex-direction: column;
+}
+
+.nosotros{
     justify-content: space-around;
+}
+
+.comunidad{
+    justify-content: flex-start;
+    line-height: 33.38px;
+}
+
+.caja3{
+   margin-right: -430px;
+   width: 20%;
 }
 
 .buscador{
@@ -328,9 +328,11 @@ section.buscador button{
     padding: 10px;
 }
 
-.copyright{
+.caja4{
     align-self: flex-end;
+}
 
+.copyright{
     color: #8C8C94;
     font-size: 0.78rem;
     font-weight: 500; 
@@ -341,9 +343,9 @@ section.buscador button{
     body, .marco-diferencia, 
     .marco-noticia, .tablon, .item1, .item2, .item3, 
     .marco-equipo, .marco-equipo h3,
-    .footer, .caja, 
-    .caja1-footer, .caja2-footer, .caja3-footer, .caja4-footer,
-    .redes-sociales, .buscador
+    .footer, .caja, .caja1, .caja2, .caja3, .caja4,
+    .nosotros, .comunidad, .redes-sociales, .buscador
+    .copyright
     {
         width: auto;
     }
@@ -432,26 +434,28 @@ section.buscador button{
     }
 
     .footer {
+        width: 100%;
         height: 534.71px;
         flex-direction: column;
         align-items: center;
+        padding: 0;
+    }
+    
+    .caja1{
+        align-items: center;
+        height: 20%;
+        order: 1;
+        width: 80%;
+    }
+
+    .caja2{
+        width: 70%;
     }
    
-    .caja1-footer{
-        order: 1;
-        
-        align-items: center;
-        height: 30%;
-        width: 80%;
-    }
-
-    .caja4-footer{
+    .caja3{
+        justify-content: center;
+        margin: 0;
         order: -1;  
-        align-items: center;
-
-        width: 80%;
-        height: 20%;
-        margin-top: -20%;
     }
 
     .redes-sociales{
@@ -459,40 +463,18 @@ section.buscador button{
         width: 100%;
     }
 
-    div#caja2, div#caja3{
-        display: inline-block;
-        position: absolute;
-        margin-top: -80px;
-        margin-bottom: 10%;
-
-    }
-
-    div#caja2 {    
-        left: 120px;
-    }
-
-    div#caja3{
-        margin-left: 40%;
-    }
-
-    div.caja3-footer nav > ul{
-        justify-content: flex-start;
-        line-height: 30px;
-    }
-
     .buscador{
-        width: 100%;
+        width: 80%;
     }
 
     section.buscador input{
         width: 308px;
     }
 
-    .copyright{
-        display: inline-block;
-        position: absolute;
-        left: 28%;
-        top: 3250px;
+    .caja4{
+        order: 1;
+        align-self: center;
     }
+
 
 }

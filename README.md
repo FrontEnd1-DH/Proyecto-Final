@@ -1,3 +1,28 @@
+## Integrantes
+
+Giuliana Sullca Carranza
+Eliana May Aguirre
+
+El proyecto lo dividimos en cuatro partes:
+
+## Parte 1 - Hecho por Giuliana Sullca
+
+ Conformada por el Header y el contenedor principal del main, donde se encuentra la imagen e informacion relevante sobre la pagina.
+
+## Parte 2 - Hecho por Eliana May
+
+  Conformado por section el cual contiene marco de diferencia y el marco de noticia.
+
+## Parte 3 - Hecho por Giuliana Sullca
+
+  Conformado por las Cards, donde va la informacion de los jugadores.
+
+## Parte 4 - Hecho por Eliana May
+
+  Conformado por la seccion de marco del equipo y el footer.
+
+
+
 ## El reto
 
 Su desafío es crear esta página de destino y hacer que se parezca lo más posible al diseño.

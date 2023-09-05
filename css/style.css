@@ -200,14 +200,14 @@ li.item1 h4, li.item2 h4, li.item3 h4{
     margin:40px;
 }
 .boton{
-    background-color: #8B48BF;
+    background-color:#8B48BF;
     color:white;
     border-radius: 50px;
     padding: 10px 30px;
     border: 2px solid #8B48BF;
 }
 .boton:hover{
-    background-color:#8B48BFB2 ;
+    background-color:#8B48BFB2 /* #3D0157*/ ;
     border-color:#8B48BFB2 ;
     cursor: pointer;
 }

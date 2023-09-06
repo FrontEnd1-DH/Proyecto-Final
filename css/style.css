@@ -96,7 +96,7 @@ header.marco-diferencia p{
 .marco-noticia{    
     display: flex;
     justify-content: center;
-    /*width: 100vw;*/
+    padding: 40px 0;
 
     background-color: #FAFAFA;
 }
@@ -106,6 +106,7 @@ ol.tablon{
     counter-reset: lista;
     padding: 0;
 }
+
 
 ol.tablon li::before{
     content: "0" counter(lista);
@@ -199,6 +200,8 @@ li.item1 h4, li.item2 h4, li.item3 h4{
     text-align: center;
     margin:40px;
 }
+
+
 .boton{
     background-color:#8B48BF;
     color:white;
@@ -263,10 +266,59 @@ li.item1 h4, li.item2 h4, li.item3 h4{
 .caja1{
      flex-direction: column;
      align-items: flex-start;
+     width: 11%;
 }
 
 .redes-sociales{
     width: 100%;
+    
+}
+
+.redes-sociales li{
+    transition: all 450ms;
+    animation: redes-sociales 2s infinite alternate;
+}
+
+@keyframes redes-sociales{
+    0%{
+        transform: rotate(15deg);
+        transform-origin: bottom left 60px;
+        opacity: 100%;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+
+    100%{
+        opacity: 100%;
+        transform: rotate(-15deg);
+        transform-origin: bottom right 60px;
+    }
+}
+
+
+.redes-sociales li#facebook:hover{
+    background-color: blue;
+}
+
+.redes-sociales li#youtube:hover{
+    background-color: red;
+    border-radius: 50%;
+}
+
+.redes-sociales li#twitter:hover{
+    background-color: #568BFB ;
+    border-radius: 50%;
+}
+
+.redes-sociales li#pinterest:hover{
+    background-color: #C0392B;
+    border-radius: 50%;
+}
+
+.redes-sociales li#instagram:hover{
+    background-color: #EC39DC;
 }
 
 .enlaces-redes-sociales{
@@ -306,7 +358,7 @@ li.item1 h4, li.item2 h4, li.item3 h4{
 
 .caja3{
    margin-right: -430px;
-   width: 20%;
+   width: 22%;
 }
 
 .buscador{
@@ -325,6 +377,19 @@ section.buscador input{
     font-weight: 600;
     line-height: 1.2rem;
     padding: 10px;
+    transition: all 450ms;
+}
+
+
+
+section.buscador input:focus:hover{
+    background-color: #8B48BFB2;
+    transform: scale(1.1);
+    transform: translateX(-10px)
+}
+
+::placeholder{
+    color:#E7E4E8;
 }
 
 section.buscador button{
@@ -339,7 +404,27 @@ section.buscador button{
     font-weight: 500;
     line-height: 1.2rem;
     padding: 10px;
+    transition: all 450ms;
 }
+
+section.buscador button:hover{
+    background-color: #8B48BFB2/*#3D0157*/;
+    /*box-shadow: 22px 16px 103px 5px rgba(219,188,237,0.65);*/
+}
+
+.letra-boton{
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    transition: all 450ms;
+}
+    
+
+.letra-boton:hover{
+    transform: scale(1.5);
+    text-shadow: 4px -2px 4px rgba(0,0,0,0.62);
+}
+
 
 .caja4{
     align-self: flex-end;

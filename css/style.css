@@ -367,7 +367,7 @@ li.item1 h4, li.item2 h4, li.item3 h4{
     justify-content: space-evenly;
 }
 
-section.buscador input{
+form.buscador input{
     height: 44px; 
     width: 201px;
 
@@ -382,7 +382,7 @@ section.buscador input{
 
 
 
-section.buscador input:focus:hover{
+form.buscador input:focus:hover{
     background-color: #8B48BFB2;
     transform: scale(1.1);
     transform: translateX(-10px)
@@ -392,7 +392,7 @@ section.buscador input:focus:hover{
     color:#E7E4E8;
 }
 
-section.buscador button{
+form.buscador button{
     height: 42px;
     width: 63px;
 
@@ -407,7 +407,7 @@ section.buscador button{
     transition: all 450ms;
 }
 
-section.buscador button:hover{
+form.buscador button:hover{
     background-color: #8B48BFB2/*#3D0157*/;
     /*box-shadow: 22px 16px 103px 5px rgba(219,188,237,0.65);*/
 }
@@ -541,6 +541,7 @@ section.buscador button:hover{
     .card.one, .card.three {
         display: none;
       }
+
     /*Parte 4 - Eliana*/
     .marco-equipo{
         background-color: #3CDDF3;
@@ -589,7 +590,7 @@ section.buscador button:hover{
         width: 100%;
     }
 
-    section.buscador input{
+    form.buscador input{
         width: 308px;
     }
 
